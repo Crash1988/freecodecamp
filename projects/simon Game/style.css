@@ -1,0 +1,264 @@
+    .container {
+        margin-top: 30px;
+    }
+    
+    .containerBut {
+        width: 684px;
+        margin: auto;
+        position: relative;
+    }
+    
+    .contOuterElem {}
+    
+    .divTag {
+        width: 330px;
+        height: 330px;
+        float: left;
+        border: 10px solid darkslategray;
+    }
+    
+    .divTag a {
+        display: block;
+        height: 100%;
+    }
+    
+    .green {
+        background-color: darkgreen;
+        border-radius: 100% 0px 0px 0px;
+        border-left: 20px solid darkslategray;
+        border-top: 20px solid darkslategray;
+    }
+    
+    .yellow {
+        background-color: darkgoldenrod;
+        border-radius: 0px 100% 0px 0px;
+        border-right: 20px solid darkslategray;
+        border-top: 20px solid darkslategray;
+    }
+    
+    .blue {
+        background-color: darkblue;
+        border-radius: 0px 0px 100% 0px;
+        border-right: 20px solid darkslategray;
+        border-bottom: 20px solid darkslategray;
+    }
+    
+    .red {
+        background-color: darkred;
+        border-radius: 0px 0px 0px 100%;
+        border-left: 20px solid darkslategray;
+        border-bottom: 20px solid darkslategray;
+    }
+    
+    .green.light {
+        background-color: green;
+        border-radius: 100% 0px 0px 0px;
+        border-left: 20px solid darkslategray;
+        border-top: 20px solid darkslategray;
+    }
+    
+    .yellow.light {
+        background-color: yellow;
+        border-radius: 0px 100% 0px 0px;
+        border-right: 20px solid darkslategray;
+        border-top: 20px solid darkslategray;
+    }
+    
+    .blue.light {
+        background-color: blue;
+        border-radius: 0px 0px 100% 0px;
+        border-right: 20px solid darkslategray;
+        border-bottom: 20px solid darkslategray;
+    }
+    
+    .red.light {
+        background-color: red;
+        border-radius: 0px 0px 0px 100%;
+        border-left: 20px solid darkslategray;
+        border-bottom: 20px solid darkslategray;
+    }
+    
+    .centerDiv {
+        background-color: white;
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        border-radius: 30%;
+        top: 200px;
+        left: 200px;
+        border: 10px solid darkslategray;
+    }
+    
+    .centerDiv h1 {
+        text-align: center;
+        color: darkslategray;
+        font-weight: bold;
+    }
+    
+    .centerDiv h1 span {
+        text-align: center;
+        color: darkslategray;
+        font-weight: bold;
+    }
+    
+    .brand {
+        color: darkslategray;
+        font-size: 3.2em;
+        margin-top: 35px;
+    }
+    
+    .brand .small {
+        font-size: 0.3em;
+        position: relative;
+        top: -15px;
+    }
+    
+    .btn1 {
+        width: 25px;
+        height: 25px;
+        background-color: darkred;
+        border-radius: 20%;
+        box-shadow: 0px 2px 3px #222;
+        border: 2px solid #444;
+        margin: auto;
+        float: left;
+    }
+    
+    .btn1:active {
+        box-shadow: 0 1px 1px #292929;
+        top: -4px;
+    }
+    
+    .clkbl {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+    
+    .unclkbl {
+        pointer-events: none;
+    }
+    
+    button:focus {
+        outline: 0 !important;
+    }
+    
+    .btn1:hover .btn1:click {
+        border-color: rgba(0, 0, 0, 0.6);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        margin-top: 6px;
+    }
+    
+    .btn-darkRed {
+        background-color: darkred;
+    }
+    
+    .btn-darkYellow {
+        background-color: darkgoldenrod;
+    }
+    
+    .btn-darkBlue {
+        background-color: darkblue;
+    }
+    
+    .btn-Red {
+        background-color: red;
+    }
+    
+    .btn-Yellow {
+        background-color: yellow;
+    }
+    
+    .btn-Blue {
+        background-color: blue;
+    }
+    
+    .screenMov {
+        width: 60px;
+        height: 40px;
+        background-color: #002600;
+        border: 5px solid darkslategray;
+        border-radius: 10px;
+        margin-left: 30px;
+        margin-top: 20px;
+        font-family: 'VT323', monospace;
+        color: brown;
+        text-align: center;
+        font-size: 23px;
+        letter-spacing: 2px;
+    }
+    
+    .btn-cont {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+    .btn-cont h3 {
+        color: darkslategray;
+    }
+    
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+        .containerBut {
+            width: 294px !important;
+        }
+        .divTag {
+            width: 140px;
+            height: 140px;
+            border: 5px solid darkslategray;
+        }
+        .green,
+        .green.light {
+            border-left: 10px solid darkslategray;
+            border-top: 10px solid darkslategray;
+        }
+        .yellow,
+        .yellow.light {
+            border-right: 10px solid darkslategray;
+            border-top: 10px solid darkslategray;
+        }
+        .blue,
+        .blue.light {
+            border-right: 10px solid darkslategray;
+            border-bottom: 10px solid darkslategray;
+        }
+        .red,
+        .red.light {
+            border-left: 10px solid darkslategray;
+            border-bottom: 10px solid darkslategray;
+        }
+        .centerDiv {
+            width: 140px;
+            height: 140px;
+            top: 70px;
+            left: 70px;
+            border: 10px solid darkslategray;
+        }
+        .brand {
+            font-size: 1.8em;
+            margin-top: 10px;
+        }
+        .brand .small {
+            font-size: 0.3em;
+            position: relative;
+            top: -10px;
+        }
+        .screenMov {
+            width: 40px;
+            height: 25px;
+            border: 3px solid darkslategray;
+            border-radius: 7px;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        .btn1 {
+            width: 15px;
+            height: 15px;
+        }
+        .btn-cont {
+            margin-left: 4px;
+            margin-top: 3px;
+            font-size: 11px;
+        }
+        /*Style*/
+    }
