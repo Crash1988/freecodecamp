@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wiki Search FreeCodeCamp</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"   integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="   crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div style="margin-top: 80px;">
+                <div class="col-md-12">
+                    <a class="btn btn-link" href='https://en.wikipedia.org/wiki/Special:Random' target='_blank' id="randomid"> Random</a>
+                    <form onsubmit="submitFn(this, event);">
+                        <div class="search-wrapper" id="divsearchid">
+                            <div class="input-holder ui-widget">
+
+                                <input type="text" id="search-inputId" class="search-input" placeholder="Type to search" onkeyup="searchAutoComplete(this,event)" />
+                                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                            </div>
+                            <span class="close" onclick="searchToggle(this, event);"></span>
+                            <div class="result-container">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-md-12" style="margin-top:40px;">
+
+            </div>
+            <div class="col-md-12">
+
+            </div>
+
+            <div class="col-md-12 " id="elementsid">
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

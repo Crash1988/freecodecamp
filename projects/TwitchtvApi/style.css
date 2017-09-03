@@ -1,0 +1,162 @@
+html,
+body {
+    height: 100%;
+    background-color: #888888;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, .1);
+    color: white;
+    text-align: center;
+    opacity: 1;
+    margin: 0px !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+.container {
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 700px;
+}
+
+h1 {
+    padding-top: 10px!important;
+}
+
+.toggle_radio {
+    position: relative;
+    /*background: rgba(255, 255, 255, .1);*/
+    margin: 4px auto;
+    overflow: hidden;
+    padding: 0 !important;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    position: relative;
+    height: 26px;
+    width: 600px;
+    opacity: 1;
+}
+
+.toggle_radio>* {
+    float: left;
+}
+
+.toggle_radio input[type=radio] {
+    display: none;
+}
+
+.toggle_radio label {
+    font: 90%/1.618 "Source Sans Pro";
+    color: rgba(255, 255, 255, .9);
+    z-index: 0;
+    display: block;
+    width: 100px;
+    height: 20px;
+    margin: 3px 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+}
+
+.toggle_option_slider {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#first_toggle:checked~.toggle_option_slider {
+    background: rgba(255, 255, 255, .3);
+    left: 3px;
+}
+
+#second_toggle:checked~.toggle_option_slider {
+    background: rgba(255, 255, 255, .3);
+    left: 109px;
+}
+
+#third_toggle:checked~.toggle_option_slider {
+    background: rgba(255, 255, 255, .3);
+    left: 215px;
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    border: 3px solid #e1e1e6;
+}
+
+#name,
+#streaming {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+
+.online {
+    background-color: rgba(173, 216, 230, .8);
+    margin: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.offline {
+    background-color: rgba(173, 216, 230, .5);
+    margin: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+#display {
+    margin-left: 15px!important;
+    margin-right: 15px!important;
+    padding: 0px!important;
+}
+
+.offline a {
+    color: white !important;
+    text-align: center;
+}
+
+.online a {
+    text-align: left;
+}
+
+.online p,
+.offline p {
+    text-align: left!important;
+    color: black !important;
+}
+
+.footer {
+    text-align: right;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#footeraid {
+    font-weight: bold;
+    margin: 10px;
+}
